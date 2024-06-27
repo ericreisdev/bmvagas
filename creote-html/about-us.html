@@ -1,18 +1,20 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en-US">
 
 <head>
    <meta charset="utf-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-   <title>Creote - Apenas mais um template HTML</title>
-   <!-- Ícone Favorito -->
-   <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
-   <!-- Ícone Favorito -->
+   <title>BM Vagas | Empregos e RH Estratégico</title>
+   <!-- Fav Icon -->
+   <link rel="icon" href="assets/images/bm/PNG/Selo -2favicon.png" type="image/x-icon">
+   <!-- Fav Icon -->
    <!-- Google Fonts -->
-   <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Spartan%3A400%2C500%2C600%2C700%2C800%2C900%7CInter%3A300%2C400%2C500%2C600%2C700%2C800%2C900&subset=latin%2Clatin-ext' type='text/css' media='all' />
+   <link rel='stylesheet'
+      href='https://fonts.googleapis.com/css?family=Spartan%3A400%2C500%2C600%2C700%2C800%2C900%7CInter%3A300%2C400%2C500%2C600%2C700%2C800%2C900&subset=latin%2Clatin-ext'
+      type='text/css' media='all' />
    <!-- Google Fonts -->
-   <!-- Estilos -->
+   <!-- Style -->
    <link rel='stylesheet' href='assets/css/bootstrap.min.css' type='text/css' media='all' />
    <link rel='stylesheet' href='assets/css/owl.css' type='text/css' media='all' />
    <link rel='stylesheet' href='assets/css/swiper.min.css' type='text/css' media='all' />
@@ -22,19 +24,73 @@
    <link rel='stylesheet' href='assets/css/font-awesome.min.css' type='text/css' media='all' />
    <link rel='stylesheet' href='assets/css/style.css' type='text/css' media='all' />
    <link rel='stylesheet' href='assets/css/scss/elements/theme-css.css' type='text/css' media='all' />
-   <link rel='stylesheet' id="creote-color-switcher-css" href='assets/css/scss/elements/color-switcher/color.css' type='text/css' media='all' />
-   <!-- Estilos -->
+   <link rel='stylesheet' id="creote-color-switcher-css" href='assets/css/scss/elements/color-switcher/color.css'
+      type='text/css' media='all' />
+   <!-- Style-->
    <!----woocommerce---->
    <link rel='stylesheet' href='assets/css/woocommerce-layout.css' type='text/css' media='all' />
    <link rel='stylesheet' href='assets/css/woocommerce.css' type='text/css' media='all' />
    <!----woocommerce---->
+   <!----navbarstyle---->
+   <style>
+      .navbar {
+         background-color: #2F2F2F;
+         position: fixed;
+         top: 0;
+         width: 100%;
+         z-index: 1000;
+      }
+
+      .navbar .logo {
+         float: left;
+         margin: 10px;
+         width: 15em;
+         /* ajuste o tamanho conforme necessário */
+         height: auto;
+         /* para manter a proporção */
+      }
+
+      .navbar ul {
+         list-style: none;
+         float: right;
+         margin: 0;
+         padding: 0;
+      }
+
+      .navbar ul li {
+         display: inline;
+         margin-right: 20px;
+      }
+
+      .navbar ul li a {
+         color: #FFFFFF;
+         font-family: 'Roboto', sans-serif;
+         text-decoration: none;
+      }
+
+      .navbar ul li a:hover {
+         color: #FF4500;
+      }
+
+      .navbar .social-icons {
+         display: inline;
+         margin-left: 20px;
+      }
+
+      .navbar .social-icons a {
+         color: #FFFFFF;
+         margin-right: 10px;
+      }
+   </style>
+   <!----navbarstyle---->
 </head>
-<body class="theme-creote">
+
+<body class="home theme-creote page-home-default-one">
    <div id="page" class="page_wapper hfeed site">
       <div class="style-switcher">
          <a href="#" id="switcher-toggler"><i class="fa fa-cog"></i></a>
-         <h3>Esquemas de Cores</h3>
-         <ul id="colorschemeOptions" title="Mudar Cor" data-css-path="assets/css/scss/elements/color-switcher/">
+         <h3>Color Skins</h3>
+         <ul id="colorschemeOptions" title="Switch Color" data-css-path="assets/css/scss/elements/color-switcher/">
             <li>
                <a href="#" data-theme="color" style="background-color: #078586;"> </a>
             </li>
@@ -48,527 +104,31 @@
                <a href="#" data-theme="color3" style="background-color: #fed000;"> </a>
             </li>
             <li>
-               <a href="#" data-theme="color4" style="background-color: #ff5538;"> </a>
+               <a href="#" data-theme="color4" style="background-color: #ff5200;"> </a>
             </li>
             <li>
                <a href="#" data-theme="color5" style="background-color: #246af4;"> </a>
             </li>
          </ul>
       </div>
-      <!---============== wrapper_full =================-->
       <div id="wrapper_full" class="content_all_warpper">
-         <!----mini cart----->
-         <div class="mini_cart_togglers fixed_cart">
-            <div class="mini-cart-count">
-               0
-            </div>
-            <i class="icon-shopping-cart"></i>
-         </div>
-         <!----mini cart----->
-         <!----preloader----->
-         <div class="preloader-wrap">
-            <div class="preloader" style="background-image:url(assets/images/preloader.gif)">
-            </div>
-            <div class="overlay"></div>
-         </div>
-         <!----preloader----->
-         <!----header----->
-         <div class="header_area" id="header_contents">
-            <div class="top_bar style_one">
-               <div class="auto-container">
-                  <div class="row align-items-center">
-                     <div class="col-lg-12">
-                        <div class="top_inner">
-                           <div class="left_side common_css">
-                              <div class="contntent address">
-                                 <i class="icon-placeholder"></i>
-                                 <div class="text">
-                                    <small>Localização</small>
-                                    <span>61W Business Str Hobert, LA </span>
-                                 </div>
-                              </div>
-                              <div class="contntent email">
-                                 <i class="icon-email"></i>
-                                 <div class="text">
-                                    <small>Email</small>
-                                    <a href="mailto:sendmail@creote.com">sendmail@creote.com</a>
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="right_side common_css">
-                              <div class="contntent phone">
-                                 <i class="icon-phone-call"></i>
-                                 <div class="text">
-                                    <small>Telefone</small>
-                                    <a href="tel:+9806071234">+9806071234</a>
-                                 </div>
-                              </div>
-                              <div class="contntent media">
-                                 <i class="icon-share"></i>
-                                 <div class="text">
-                                    <small>Compartilhar</small>
-                                    <a href="#" target=_blank rel=nofollow>
-                                       <small>Fb</small>
-                                    </a>
-                                    <a href="#" target=_blank rel=nofollow>
-                                       <small>Tw</small>
-                                    </a>
-                                    <a href="#" target=_blank rel=nofollow>
-                                       <small>Sk</small>
-                                    </a>
-                                    <a href="#" target=_blank rel=nofollow>
-                                       <small>Te</small>
-                                    </a>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
+         <!----page-header----->
+         <div class="navbar">
+            <a href="index.html" class="logo"><img src="assets/images/bm/PNG/Selo-5.png" alt="BM Vagas"></a>
+            <ul>
+               <li><a href="index.html">Início</a></li>
+               <li><a href="about-us.html">Sobre nós</a></li>
+               <li><a href="service-details.html">Serviços</a></li>
+               <li><a href="contact.html">Contato</a></li>
+               <div class="social-icons">
+                  <a href="https://www.facebook.com/bmvagas"><i class="fa fa-facebook"></i></a>
+                  <a href="https://www.instagram.com/bmvagas"><i class="fa fa-instagram"></i></a>
+                  <a href="https://www.linkedin.com/company/bmvagas/"><i class="fa fa-linkedin"></i></a>
                </div>
-            </div>
-            <header class="header header_default style_one get_sticky_header">
-               <div class="auto-container">
-                  <div class="row align-items-center">
-                     <div class="col-lg-2 col-md-9 col-sm-9 col-xs-9 logo_column">
-                        <div class="header_logo_box">
-                           <a href="index.html" class="logo navbar-brand">
-                              <img src="assets/images/logo-default.png" alt="Creote Elementor" class="logo_default">
-                              <img src="assets/images/logo-default.png" alt="Creote Elementor" class="logo__sticky">
-                           </a>
-                        </div>
-                     </div>
-                     <div class="col-lg-10 col-md-3 col-sm-3 col-xs-3 menu_column">
-                        <div class="navbar_togglers hamburger_menu">
-                           <span class="line"></span>
-                           <span class="line"></span>
-                           <span class="line"></span>
-                        </div>
-                        <div class="header_content_collapse">
-                           <div class="header_menu_box">
-                              <div class="navigation_menu">
-                                 <ul id="myNavbar" class="navbar_nav">
-                                    <li
-                                       class="menu-item  menu-item-has-children dropdown dropdown_full position-static mega_menu nav-item">
-                                       <a href="index.html" class="dropdown-toggle nav-link">
-                                          <span>Início</span>
-                                       </a>
-                                       <ul class="dropdown-menu width_60_percentage">
-                                          <li>
-                                             <div class="row">
-                                                <div class="col-lg-3 m_column">
-                                                   <div class="list_item_box style_one">
-                                                      <ul>
-                                                         <li>
-                                                            <small class="d-flex align-items-center">
-                                                               <i class="icon-home only_icon"></i>
-                                                               <a class="nav_link" href="index.html">Página Inicial - 01</a>
-                                                            </small>
-                                                         </li>
-                                                         <li>
-                                                            <small class="d-flex align-items-center">
-                                                               <i class="icon-home only_icon"></i>
-                                                               <a class="nav_link" href="home-2.html">Página Inicial - 02</a>
-                                                            </small>
-                                                         </li>
-                                                         <li>
-                                                            <small class="d-flex align-items-center">
-                                                               <i class="icon-home only_icon"></i>
-                                                               <a class="nav_link" href="home-3.html">Página Inicial - 03</a>
-                                                            </small>
-                                                         </li>
-                                                         <li>
-                                                            <small class="d-flex align-items-center">
-                                                               <i class="icon-home only_icon"></i>
-                                                               <a class="nav_link" href="home-4.html">Página Inicial - 04</a>
-                                                            </small>
-                                                         </li>
-
-                                                      </ul>
-                                                   </div>
-                                                </div>
-                                                <div class="col-lg-3 m_column">
-                                                   <div class="list_item_box style_one">
-                                                      <ul>
-                                                         <li>
-                                                            <small class="d-flex align-items-center">
-                                                              <i class="icon-home only_icon"></i>
-                                                               <a class="nav_link" href="home-5.html">Página Inicial - 05</a>
-                                                            </small>
-                                                         </li>
-                                                         <li>
-                                                            <small class="d-flex align-items-center">
-                                                               <i class="icon-home only_icon"></i>
-                                                               <a class="nav_link" href="home-6.html">Página Inicial - 06</a>
-                                                            </small>
-                                                         </li>
-                                                         <li>
-                                                            <small class="d-flex align-items-center">
-                                                               <i class="icon-home only_icon"></i>
-                                                               <a class="nav_link" href="home-7.html">Página Inicial - 07</a>
-                                                            </small>
-                                                         </li>
-                                                         <li>
-                                                            <small class="d-flex align-items-center">
-                                                               <i class="icon-home only_icon"></i>
-                                                               <a class="nav_link" href="home-8.html">Página Inicial - 08</a>
-                                                            </small>
-                                                         </li>
-                                                      </ul>
-                                                   </div>
-                                                </div>
-                                                <div class="col-lg-3 m_column">
-                                                   <div class="list_item_box style_one">
-                                                      <ul>
-
-                                                         <li>
-                                                            <small class="d-flex align-items-center">
-                                                               <i class="icon-home only_icon"></i>
-                                                               <a class="nav_link" href="home-9.html">Página Inicial - 09</a>
-                                                            </small>
-                                                         </li>
-                                                         <li>
-                                                            <small class="d-flex align-items-center">
-                                                               <i class="icon-home only_icon"></i>
-                                                               <a class="nav_link" href="home-10.html">Página Inicial - 10</a>
-                                                            </small>
-                                                         </li>
-                                                         <li>
-                                                            <small class="d-flex align-items-center">
-                                                               <i class="icon-home only_icon"></i>
-                                                               <a class="nav_link" href="home-11.html">Página Inicial - 11</a>
-                                                            </small>
-                                                         </li>
-                                                         <li>
-                                                            <small class="d-flex align-items-center">
-                                                               <i class="icon-home only_icon"></i>
-                                                               <a class="nav_link" href="home-12.html">Página Inicial - 12</a>
-                                                            </small>
-                                                         </li>
-                                                      </ul>
-                                                   </div>
-                                                </div>
-                                                <div class="col-lg-3 m_column">
-                                                   <div class="list_item_box style_one">
-                                                      <ul>
-                                                         <li>
-                                                            <small class="d-flex align-items-center">
-                                                               <i class="icon-home only_icon"></i>
-                                                               <a class="nav_link" href="home-13.html">Página Inicial - 13</a>
-                                                            </small>
-                                                         </li>
-                                                         <li>
-                                                            <small class="d-flex align-items-center">
-                                                               <i class="icon-home only_icon"></i>
-                                                               <a class="nav_link" href="home-14.html">Página Inicial - 14</a>
-                                                            </small>
-                                                         </li>
-                                                         <li>
-                                                            <small class="d-flex align-items-center">
-                                                               <i class="icon-home only_icon"></i>
-                                                               <a class="nav_link" href="home-15.html">Página Inicial - 15</a>
-                                                            </small>
-                                                         </li>
-                                                         <li>
-                                                            <small class="d-flex align-items-center">
-                                                               <i class="icon-home only_icon"></i>
-                                                               <a class="nav_link" href="home-16.html">Página Inicial - 16</a>
-                                                            </small>
-                                                         </li>
-
-                                                      </ul>
-                                                   </div>
-                                                </div>
-                                             </div>
-                                          </li>
-                                       </ul>
-                                    </li>
-                                    <li
-                                       class="menu-item menu-item-has-children dropdown nav-item">
-                                       <a href="#" class="dropdown-toggle nav-link">
-                                          <span>Páginas</span>
-                                       </a>
-                                       <ul class="dropdown-menu">
-                                          <li class="menu-item  nav-item">
-                                             <a href="about-us.html" class="dropdown-item nav-link">
-                                                <span>Sobre Nós</span>
-                                             </a>
-                                          </li>
-                                          <li
-                                             class="menu-item menu-item-has-children dropdown nav-item">
-                                             <a href="service-default.html"
-                                                class="dropdown-item nav-link"><span>Serviço</span></a>
-                                             <ul class="dropdown-menu">
-                                                <li
-                                                   class="menu-item  nav-item">
-                                                   <a href="service-classic.html" class="dropdown-item nav-link">
-                                                      <span>Serviço Clássico</span>
-                                                   </a>
-                                                </li>
-                                                <li
-                                                   class="menu-item  nav-item">
-                                                   <a href="service-default.html" class="dropdown-item nav-link">
-                                                      <span>Serviço Padrão</span>
-                                                   </a>
-                                                </li>
-                                                <li
-                                                   class="menu-item nav-item">
-                                                   <a href="service-details.html" class="dropdown-item nav-link">
-                                                      <span>Detalhes do Serviço</span>
-                                                   </a>
-                                                </li>
-                                             </ul>
-                                          </li>
-                                          <li class="menu-item  nav-item">
-                                             <a href="pricing-packages.html" class="dropdown-item nav-link">
-                                                <span>Pacotes de Preços</span>
-                                             </a>
-                                          </li>
-                                          <li class="menu-item  nav-item">
-                                             <a href="our-team.html" class="dropdown-item nav-link">
-                                                <span>Nosso Time</span>
-                                             </a>
-                                          </li>
-                                          <li class="menu-item  nav-item">
-                                             <a href="faqs.html" class="dropdown-item nav-link">
-                                                <span>FAQ’s</span>
-                                             </a>
-                                          </li>
-                                          <li class="menu-item  nav-item">
-                                             <a href="contact.html" class="dropdown-item nav-link">
-                                                <span>Contato</span>
-                                             </a>
-                                          </li>
-                                          <li class="menu-item  nav-item">
-                                             <a href="coming-soon.html" class="dropdown-item nav-link">
-                                                <span>Em Breve</span>
-                                             </a>
-                                          </li>
-                                       </ul>
-                                    </li>
-                                    <li class="menu-item menu-item-has-children dropdown dropdown_full position-static mega_menu nav-item">
-                                       <a href="#"
-                                          class="dropdown-toggle nav-link"><span>Elementos</span></a>
-                                       <ul class="dropdown-menu width_60_percentage">
-                                          <li>
-                                             <div class="row">
-                                                <div class="col-lg-2 m_column">
-                                                   <h5>Conteúdo 01</h5>
-                                                   <div class="list_item_box style_one">
-                                                      <ul>
-                                                         <li><a href="elements/testimonial.html">Depoimento</a></li>
-                                                         <li><a href="elements/call-to-action.html">Lista de Contatos</a></li>
-                                                         <li><a href="elements/video-button.html">Botão de Vídeo</a></li>
-                                                         <li><a href="elements/newsteller.html">Newsletter</a></li>
-                                                         <li><a href="elements/blog-posts.html">Postagens do Blog</a></li>
-                                                         <li><a href="elements/team.html">Equipe</a></li>
-                                                      </ul>
-                                                   </div>
-                                                </div>
-                                                <div class="col-lg-2 m_column">
-                                                   <h5>Conteúdo 02</h5>
-                                                   <div class="list_item_box style_one">
-                                                      <ul>
-                                                         <li><a href="elements/process.html">Processo</a></li>
-                                                         <li><a href="elements/project-carousel.html">Carrossel de Projetos</a></li>
-                                                         <li><a href="elements/project-filter.html">Filtro de Projetos</a></li>
-                                                         <li><a href="elements/progress-bar.html">Barra de Progresso</a></li>
-                                                         <li><a href="elements/content-box.html">Caixa de Conteúdo</a></li>
-                                                         <li><a href="elements/faqs-elements.html">FAQ’s</a></li>
-                                                      </ul>
-                                                   </div>
-                                                </div>
-                                                <div class="col-lg-2 m_column">
-                                                   <h5>Apresentacional</h5>
-                                                   <div class="list_item_box style_one">
-                                                      <ul>
-                                                         <li><a href="elements/button.html">Botão</a></li>
-                                                         <li><a href="elements/list-items.html">Itens de Lista</a></li>
-                                                         <li><a href="elements/contact-form.html">Formulário de Contato</a></li>
-                                                         <li><a href="elements/service-post.html">Post de Serviço</a></li>
-                                                         <li><a href="elements/sliders.html">Sliders</a></li>
-                                                         <li><a href="elements/tabs.html">Abas</a></li>
-                                                      </ul>
-                                                   </div>
-                                                </div>
-                                                <div class="col-lg-2 m_column">
-                                                   <h5>Tipografia</h5>
-                                                   <div class="list_item_box style_one">
-                                                      <ul>
-                                                         <li><a href="elements/call-to-action.html">Chamada para Ação</a></li>
-                                                         <li><a href="elements/extra-content.html">Conteúdo Extra</a></li>
-                                                         <li><a href="elements/simple-image.html">Imagem Simples</a></li>
-                                                         <li><a href="elements/client-image.html">Imagem do Cliente</a></li>
-                                                         <li><a href="elements/price-plan.html">Plano de Preços</a></li>
-                                                         <li><a href="elements/title.html">Título</a></li>
-                                                      </ul>
-                                                   </div>
-                                                </div>
-                                                <div class="col-lg-2 m_column">
-                                                   <h5>Básico</h5>
-                                                   <div class="list_item_box style_one">
-                                                      <ul>
-                                                         <li><a href="elements/service-box.html">Caixa de Serviço</a></li>
-                                                         <li><a href="elements/count-down.html">Contagem Regressiva</a></li>
-                                                         <li><a href="elements/timeline.html">Linha do Tempo</a></li>
-                                                         <li><a href="elements/contact-box.html">Caixa de Contato</a></li>
-                                                      </ul>
-                                                   </div>
-                                                </div>
-                                                <div class="col-lg-2 m_column">
-                                                   <h5>Infográfico</h5>
-                                                   <div class="list_item_box style_one">
-                                                      <ul>
-                                                         <li><a href="elements/image-box.html">Caixa de Imagem</a></li>
-                                                         <li><a href="elements/icon-box.html">Caixa de Ícone</a></li>
-                                                         <li><a href="elements/fun-facts.html">Fatos Divertidos</a></li>
-                                                         <li><a href="elements/quotes.html">Citações</a></li>
-                                                      </ul>
-                                                   </div>
-                                                </div>
-                                             </div>
-                                          </li>
-                                       </ul>
-                                    </li>
-                                    <li
-                                       class="menu-item menu-item-has-children dropdown nav-item">
-                                       <a href="blog.html" class="dropdown-toggle nav-link">
-                                          <span>Blog</span>
-                                       </a>
-                                       <ul class="dropdown-menu">
-                                          <li class="menu-item nav-item">
-                                             <a href="blog.html" class="dropdown-item nav-link">
-                                                <span>Blog Clássico</span>
-                                             </a>
-                                          </li>
-                                          <li class="menu-item  nav-item">
-                                             <a href="blog-modern.html" class="dropdown-item nav-link">
-                                                <span>Blog Moderno</span>
-                                             </a>
-                                          </li>
-                                          <li class="menu-item  nav-item">
-                                             <a href="blog-simple.html" class="dropdown-item nav-link">
-                                                <span>Blog Simples</span>
-                                             </a>
-                                          </li>
-                                          <li class="menu-item  nav-item">
-                                             <a href="blog-list-view.html" class="dropdown-item nav-link">
-                                                <span>Blog em Lista</span>
-                                             </a>
-                                          </li>
-                                          <li class="menu-item  nav-item">
-                                             <a href="blog-metro-fullwidth.html" class="dropdown-item nav-link">
-                                                <span>Blog Metro em Tela Cheia</span>
-                                             </a>
-                                          </li>
-                                          <li class="menu-item nav-item">
-                                             <a href="blog-single.html" class="dropdown-item nav-link">
-                                                <span>Post Único</span>
-                                             </a>
-                                          </li>
-                                       </ul>
-                                    </li>
-                                    <li
-                                       class="menu-item menu-item-has-children dropdown nav-item">
-                                       <a href="project-1-column-grid.html" class="dropdown-toggle nav-link">
-                                          <span>Projetos</span>
-                                       </a>
-                                       <ul class="dropdown-menu">
-                                          <li class="menu-item  nav-item">
-                                             <a href="project-1-column-grid.html" class="dropdown-item nav-link">
-                                                <span>Grade de 1 Coluna</span>
-                                             </a>
-                                          </li>
-                                          <li class="menu-item  nav-item">
-                                             <a href="project-1-column-with-sidebar.html"
-                                                class="dropdown-item nav-link">
-                                                <span>1 Coluna com Barra Lateral</span>
-                                             </a>
-                                          </li>
-                                          <li class="menu-item  nav-item">
-                                             <a href="project-2-column-grid.html" class="dropdown-item nav-link">
-                                                <span>Grade de 2 Colunas</span>
-                                             </a>
-                                          </li>
-                                          <li class="menu-item  nav-item">
-                                             <a href="project-3-column-grid.html" class="dropdown-item nav-link">
-                                                <span>Grade de 3 Colunas</span>
-                                             </a>
-                                          </li>
-                                          <li class="menu-item  nav-item">
-                                             <a href="project-3-column-overlay.html" class="dropdown-item nav-link">
-                                                <span>Sobreposição de 3 Colunas</span>
-                                             </a>
-                                          </li>
-                                          <li class="menu-item nav-item">
-                                             <a href="project-details.html" class="dropdown-item nav-link">
-                                                <span>Detalhes do Projeto</span>
-                                             </a>
-                                          </li>
-                                       </ul>
-                                    </li>
-                                    <li
-                                       class="menu-item  menu-item-has-children dropdown nav-item">
-                                       <a href="shop.html" class="dropdown-toggle nav-link">
-                                          <span>Loja</span>
-                                       </a>
-                                       <ul class="dropdown-menu">
-                                          <li class="menu-item  nav-item">
-                                             <a href="shop.html" class="dropdown-item nav-link">
-                                                <span>Produtos</span>
-                                             </a>
-                                          </li>
-                                          <li class="menu-item nav-item">
-                                             <a href="shop-details.html" class="dropdown-item nav-link">
-                                                <span>Detalhes do Produto</span>
-                                             </a>
-                                          </li>
-                                          <li class="menu-item nav-item">
-                                             <a href="shop-with-sidebar.html" class="dropdown-item nav-link">
-                                                <span>Produto com Barra Lateral</span>
-                                             </a>
-                                          </li>
-                                          <li class="menu-item  nav-item">
-                                             <a href="my-account.html" class="dropdown-item nav-link">
-                                                <span>Minha Conta</span>
-                                             </a>
-                                          </li>
-                                          <li class="menu-item  nav-item">
-                                             <a href="checkout.html" class="dropdown-item nav-link">
-                                                <span>Finalizar Compra</span>
-                                             </a>
-                                          </li>
-                                          <li class="menu-item  nav-item">
-                                             <a href="cart.html" class="dropdown-item nav-link">
-                                                <span>Carrinho</span>
-                                             </a>
-                                          </li>
-                                       </ul>
-                                    </li>
-                                 </ul>
-                              </div>
-                           </div>
-                           <div class="header_right_content">
-                              <ul>
-                                 <li>
-                                    <button type="button" class="search-toggler"><i class="icon-search"></i></button>
-                                 </li>
-                                 <li class="header-button">
-                                    <a href="#" target="_blank" rel="" class="theme-btn one"> Entre em Contato </a>
-                                 </li>
-                                 <li>
-                                    <button type="button" class="contact-toggler"><i class="icon-bar"></i></button>
-                                 </li>
-                              </ul>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </header>
-             
+            </ul>
          </div>
-         <!----header end----->
+<!----end page-header----->
+<br><br><br>
          <!----page header----->
          <div class="page_header_default style_one ">
             <div class="parallax_cover">
@@ -620,8 +180,8 @@
                            <!--===============spacing==============-->
                            <div class="extra_content image_with_content dark_color">
                               <div class="simple_image">
-                                 <img src="assets/images/cuntry-1.png" alt="img">
-                                 <h2> Desde 1998, <br> Operando em Birmingham.</h2>
+                                 <!-- <img src="assets/images/cuntry-1.png" alt="img"> -->
+                                 <h2> Desde 2014, <br> Operando no Brasil todo.</h2>
                               </div>
                            </div>
                            <!--===============spacing==============-->
@@ -1346,7 +906,7 @@
                                  </div>
                                  <div class="authour_details">
                                     <span>Diretora </span>
-                                    <h6>Amelia Margaret</h6>
+                                    <h6>Betânia Machado</h6>
                                     <div class="button_view">
                                        <a href="#" target="_blank" rel="nofollow" class="theme-btn one"> Ver Perfil
                                        </a>
@@ -1381,7 +941,7 @@
                                  </div>
                                  <div class="authour_details">
                                     <span>Líder de Equipe </span>
-                                    <h6>Andrew Cameron</h6>
+                                    <h6>Silvia Calazans</h6>
                                     <div class="button_view">
                                        <a href="#" target="_blank" rel="nofollow" class="theme-btn one"> Ver Perfil
                                        </a>
@@ -1416,7 +976,7 @@
                                  </div>
                                  <div class="authour_details">
                                     <span>Gerente </span>
-                                    <h6>Sofia Charlotte</h6>
+                                    <h6>Stephanie</h6>
                                     <div class="button_view">
                                        <a href="#" target="_blank" rel="nofollow" class="theme-btn one"> Ver Perfil
                                        </a>
@@ -1473,155 +1033,123 @@
       <!--===============PAGE CONTENT END==============-->
    </div>
    <!---============== wrapper_full =================-->
-   <!---==============rodapé start =================-->
-   <div class="footer_area" id="footer_contents">
-      <div class="footer_widgets_wrap bg_dark_2">
-         <!--===============spacing==============-->
-            <div class="pd_top_80"></div>
-         <!--===============spacing==============-->
-         <div class="container">
-            <div class="row">
-               <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12">
-                  <div class="footer_widgets about_company light_color">
-                     <div class="about_company_inner">
-                        <div class="footer_logo">
-                           <a href="#" target="_blank" rel="nofollow">
-                              <img src="assets/images/logo-white.png" class="img-fluid" alt="logo" />
-                           </a>
+   <!-<!-----footer------>
+      <div class="footer_area footer_seven bg_dark_2" id="footer_contents">
+         <div class="footer_widgets_wrap">
+            <div class="auto-container">
+               <div class="row">
+                  <div class="col-xl-3 col-lg-12 col-md-6 col-sm-12 mb-sm-5 mb-md-5 mb-lg-5 mb-xl-0">
+                     <div class="footer_widgets about_company light_color">
+                        <div class="about_company_inner">
+                           <div class="footer_logo">
+                              <a href="#" target="_blank" rel="nofollow">
+                                 <img src="assets/images/bm/PNG/Selo -2favicon.png" alt="logo" />
+                              </a>
+                           </div>
                            <!--===============spacing==============-->
-                              <div class="pd_bottom_30"></div>
+                           <div class="pd_bottom_30"></div>
                            <!--===============spacing==============-->
-                        </div>
-                        <div class="content_box">
-                           <p> 
-                              Dever as obrigações do negócio frequentemente ocorrem que o prazer tem também
-                              repudiado aborrecimentos suportados aceitos.
-                           </p>
-                           <div class="consulting">
-                              <div class="image">
-                                 <img src="assets/images/authour-image.png" alt="precisa de ajuda" />
-                              </div>
-                              <div class="help_con">
-                                 <h6>Precisa de Ajuda?</h6>
-                                 <h2>
-                                    <a href="#" target="_blank" rel="nofollow"> Consultoria Gratuita</a>
-                                 </h2>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12">
-                  <div class="footer_widgets wid_tit style_one">
-                     <div class="fo_wid_title">
-                        <h2>Entre em Contato</h2>
-                     </div>
-                  </div>
-                  <!--===============spacing==============-->
-                        <div class="pd_bottom_25"></div>
-                  <!--===============spacing==============-->
-                  <div class="footer_widgets get_in_touch_foo light_color">
-                     <div class="get_intouch_inrfo">
-                        <div class="foo_cont_inner">
-                           <div class="top">
-                              <h6> Localização</h6>
-                              <p> 
-                                 280 Granite Run Drive Suite #200
-                                 Lancaster, PA 1760
-                              </p>
-                           </div>
-                           <div class="bottom">
-                              <h6> Contato</h6>
-                              <div class="con_content">
-                                 <h5> Telefone :</h5>
-                                 <a href="tel:+9806071234"> +98 060 712 34</a>
-                              </div>
-                              <div class="con_content">
-                                 <h5> Envie-nos um Email :</h5>
-                                 <a href="tel:sendmail@creote.com"> sendmail@creote.com</a>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-xl-2 col-lg-4 col-md-4 col-sm-12">
-                  <div class="footer_widgets wid_tit style_one">
-                     <div class="fo_wid_title">
-                        <h2>Empresa</h2>
-                     </div>
-                  </div>
-                  <!--===============spacing==============-->
-                        <div class="pd_bottom_25"></div>
-                  <!--===============spacing==============-->
-                  <div class="footer_widgets clearfix navigation_foo light_color style_one">
-                     <div class="navigation_foo_box">
-                        <div class="navigation_foo_inner">
-                           
-                              <ul class="menu">
-                                 <li><a href="#">Início</a></li>
-                                 <li><a href="#">Sobre Nós</a></li>
-                                 <li><a href="#">Contato</a></li>
-                                 <li><a href="#">Profissionais</a></li>
-                                 <li><a href="#">Insights</a></li>
-                                 <li><a href="#">Soluções de RH</a></li>
+                           <div class="social_media_v_one light">
+                              <ul>
+                                 <li>
+                                    <a href="#"><span class="fa fa-facebook"></span>
+                                       <small>facebook</small>
+                                    </a>
+                                 </li>
+                                 <li>
+                                    <a href="#"><span class="fa fa-twitter"></span>
+                                       <small>twitter</small>
+                                    </a>
+                                 </li>
+                                
+                                 <li>
+                                    <a href="#"><span class="fa fa-instagram"></span>
+                                       <small>instagram</small>
+                                    </a>
+                                 </li>
                               </ul>
-                       
+                           </div>
                         </div>
                      </div>
                   </div>
-               </div>
-               <div class="col-xl-2 col-lg-4 col-md-4 col-sm-12">
-                  <div class="footer_widgets wid_tit style_one">
-                     <div class="fo_wid_title">
-                        <h2>Informação</h2>
+                  <div class="col-xl-3 col-lg-5 col-md-6 col-sm-12 mb-sm-5 mb-md-5 mb-lg-0 mb-xl-0">
+                     <div class="footer_widgets wid_tit style_one">
+                        <div class="fo_wid_title">
+                           <h2>Entre em Contato</h2>
+                        </div>
+                        <!--===============spacing==============-->
+                        <div class="pd_bottom_10"></div>
+                        <!--===============spacing==============-->
+                     </div>
+                     <div class="footer_widgets get_in_touch_foo light_color">
+                        <div class="get_intouch_inrfo">
+                           <div class="foo_cont_inner">
+                              <div class="top">
+                                 <h6>Localização</h6>
+                                 <p>Rua Isolina Gomes dos Santos 75 Loja 01, Ouro Fino, MG, 37570-000</p>
+                              </div>
+                              <div class="bottom">
+                                 <h6>Contato</h6>
+                                 <div class="con_content">
+                                    <h5>Telefone:</h5>
+                                    <a href="tel:+5511998765432">+55 11 94966-9300</a>
+                                 </div>
+                                 <div class="con_content">
+                                    <h5>Email:</h5>
+                                    <a href="mailto:contato@bmvagas.com">contato@bmvagas.com</a>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
                      </div>
                   </div>
-                  <!--===============spacing==============-->
-                        <div class="pd_bottom_25"></div>
-                  <!--===============spacing==============-->
-                  <div class="footer_widgets clearfix navigation_foo light_color style_one">
-                     <div class="navigation_foo_box">
+                  <div class="col-xl-2 col-lg-2 col-md-6 col-sm-12 mb-sm-5 mb-md-0 mb-lg-0 mb-xl-0">
+                     <div class="footer_widgets wid_tit style_one">
+                        <div class="fo_wid_title">
+                           <h2>Empresa</h2>
+                        </div>
+                        <!--===============spacing==============-->
+                        <div class="pd_bottom_10"></div>
+                        <!--===============spacing==============-->
+                     </div>
+                     <div class="footer_widgets clearfix navigation_foo light_color style_one">
                         <div class="navigation_foo_box">
                            <div class="navigation_foo_inner">
-                              
-                                 <ul class="menu">
-                                    <li><a href="#">Como Funciona</a></li>
-                                    <li><a href="#">Parceiros</a></li>
-                                    <li><a href="#">Depoimentos</a></li>
-                                    <li><a href="#">Áreas Principais</a></li>
-                                    <li><a href="#">Estudos de Caso</a></li>
-                                    <li><a href="#">Preços</a></li>
+                              <div class="menu-company-container">
+                                 <ul id="menu-company" class="menu">
+                                    <li><a href="#">Início</a></li>
+                                    <li><a href="#">Sobre Nós</a></li>
+                                    <li><a href="#">Contato</a></li>
+                                    <li><a href="#">Vagas</a></li>
+                                    <li><a href="#">Blog</a></li>
+                                    <li><a href="#">Serviços</a></li>
                                  </ul>
-                          
+                              </div>
                            </div>
                         </div>
                      </div>
                   </div>
-               </div>
-               <div class="col-xl-2 col-lg-4 col-md-4 col-sm-12">
-                  <div class="footer_widgets wid_tit style_one">
-                     <div class="fo_wid_title">
-                        <h2>Essenciais</h2>
+                  <div class="col-xl-4 col-lg-5 col-md-6 col-sm-12">
+                     <div class="footer_widgets wid_tit style_one">
+                        <div class="fo_wid_title">
+                           <h2>Inscreva-se Hoje</h2>
+                        </div>
+                        <!--===============spacing==============-->
+                        <div class="pd_bottom_10"></div>
+                        <!--===============spacing==============-->
                      </div>
-                  </div>
-                  <!--===============spacing==============-->
-                        <div class="pd_bottom_25"></div>
-                  <!--===============spacing==============-->
-                  <div class="footer_widgets clearfix navigation_foo light_color style_one">
-                     <div class="navigation_foo_box">
-                        <div class="navigation_foo_inner">
-                            
-                              <ul class="menu">
-                                 <li><a href="#">Carreiras</a></li>
-                                 <li><a href="#">Infraestrutura</a></li>
-                                 <li><a href="#">Suporte ao Cliente</a></li>
-                                 <li><a href="#">Política de Privacidade</a></li>
-                                 <li><a href="#">Termos de Uso</a></li>
-                                 <li><a href="#">Mapa do Site</a></li>
-                              </ul>
-                        
+                     <div class="footer_widgets foo_subscribe light_color style_one">
+                        <div class="item_subscribe with_text">
+                           <p>Inscreva-se e receba nossas ofertas e atualizações diretamente na sua caixa de entrada.</p>
+                           <div class="shortcodes">
+                              <form class="mc4wp-form" method="post" data-name="Subscibe">
+                                 <div class="mc4wp-form-fields">
+                                    <input type="email" name="EMAIL" placeholder="Seu endereço de email" required="">
+                                    <input type="submit" value="Inscreva-se">
+                                 </div>
+                              </form>
+                           </div>
+                           <p>* Nós não compartilhamos seu endereço de email</p>
                         </div>
                      </div>
                   </div>
@@ -1629,61 +1157,36 @@
             </div>
          </div>
          <!--===============spacing==============-->
-            <div class="pd_bottom_50"></div>
+         <div class="pd_bottom_50"></div>
          <!--===============spacing==============-->
-      </div>
-      <div class="creote-footer-copyright bg_dark_3">
-         <!--===============spacing==============-->
-            <div class="pd_top_10"></div>
-         <!--===============spacing==============-->
-         <div class="container">
-            <div class="row align-items-center">
-               <div class="col-lg-6 col-md-12 col-sm-12">
-                  <div class="footer_copy_content color_white">
-                     © 2023 <a href="https://themeforest.net/user/steelthemes">Steelthemes.</a> Todos os Direitos
-                     Reservados.
+         <div class="footer-copyright">
+            <!--===============spacing==============-->
+            <div class="divider_w_1"></div>
+            <div class="pd_top_20"></div>
+            <!--===============spacing==============-->
+            <div class="auto-container">
+               <div class="row align-items-center">
+                  <div class="col-lg-6 col-md-12 mb-3 mb-lg-0 mb-xl-0">
+                     <div class="footer_copy_content color_white">
+                        © 2024 <a href="https://bmvagas.com.br" class="color_white">BM Vagas.</a> Todos os Direitos Reservados.
+                     </div>
+                  </div>
+                  <div class="col-lg-6 col-md-12">
+                     <div class="nav_link_v_one text-md-end">
+                        <ul>
+                           <li><a href="#" class="color_white" target="_blank" rel="nofollow">Termos de Uso</a></li>
+                           <li><a href="#" class="color_white" target="_blank" rel="nofollow">Política de Privacidade</a></li>
+                        </ul>
+                     </div>
                   </div>
                </div>
-               <div class="col-lg-6 col-md-12 col-sm-12 text-end">
-                     <div class="footer_copy_content_right">
-                        <div class="social_media_v_one">
-                           <ul>
-                              <li>
-                                 <a href="#">
-                                    <span class="fa fa-facebook"></span>
-                                    <small>facebook</small>
-                                 </a>
-                              </li>
-                              <li>
-                                 <a href="#">
-                                    <span class="fa fa-twitter"></span>
-                                    <small>twitter</small>
-                                 </a>
-                              </li>
-                              <li>
-                                 <a href="#">
-                                    <span class="fa fa-skype"></span>
-                                    <small>skype</small>
-                                 </a>
-                              </li>
-                              <li>
-                                 <a href="#">
-                                    <span class="fa fa-instagram"></span>
-                                    <small>instagram</small>
-                                 </a>
-                              </li>
-                           </ul>
-                        </div>
-                     </div>
-               </div>
             </div>
+            <!--===============spacing==============-->
+            <div class="pd_bottom_20"></div>
+            <!--===============spacing==============-->
          </div>
-         <!--===============spacing==============-->
-            <div class="pd_bottom_10"></div>
-         <!--===============spacing==============-->
       </div>
-   </div>
-   <!---==============rodapé end =================-->
+      <!---==============footer end =================-->
    <!---==============menu mobile =================-->
    <div class="crt_mobile_menu">
       <div class="menu-backdrop"></div>
@@ -1816,23 +1319,7 @@
       </div>
    </div>
    <!---==============popup modal end=================-->
-   <!---==============carrinho=================-->
-   <div class="side_bar_cart" id="mini_cart">
-      <div class="cart_overlay"></div>
-      <div class="cart_right_conten">
-         <div class="close">
-            <div class="close_btn_mini"><i class="icon-close"></i></div>
-         </div>
-         <div class="cart_content_box">
-            <div class="contnet_cart_box">
-               <div class="widget_shopping_cart_content">
-                  <p class="woocommerce-mini-cart__empty-message">Nenhum produto no carrinho.</p>
-               </div>
-            </div>
-         </div>
-      </div>
-   </div>
-   <!---==============carrinho=================-->
+
   
 </div>
 <!-- Voltar ao topo com indicador de progresso-->

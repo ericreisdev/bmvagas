@@ -1,20 +1,40 @@
-:root{
-    --primary-color-one: #ff5538;
-    --menu-active-color: #ff5538;
-    --primary-color-two: #1a3760;
-    --heading-dark: #1a3760;
-    --link-color-dark: #1a3760;
-    --menu-color: #1a3760;
-    --menu-dropdown-color: #1a3760;
-    --primary-color-five: #1a3760;
+:root {
+    --primary-color-one: #fb5304; /* international-orange */
+    --menu-active-color: #fb5304; /* international-orange */
+    --primary-color-two: #050505; /* black */
+    --heading-dark: #dddddd; /* alto */
+    --link-color-dark: #dddddd; /* alto */
+    --menu-color: #050505; /* black */
+    --menu-dropdown-color: #050505; /* black */
+    --primary-color-five: #050505; /* black */
+    --secondary-color-one: #dc3c44; /* valencia */
+    --secondary-color-two: #d43c04; /* grenadier */
+    --secondary-color-three: #c53404; /* grenadier */
+    --secondary-color-four: #7c7c7c; /* boulder */
+    --secondary-color-five: #747474; /* boulder */
+    --secondary-color-six: #a32b06; /* totem-pole */
+    --secondary-color-seven: #989595; /* dusty-gray */
+    --secondary-color-eight: #dddddd; /* alto */
 }
-.primarg_bg_color{
-    background: var(--primary-color-one)!important;
-    background-color: var(--primary-color-one)!important;
+
+.primarg_bg_color {
+    background: var(--primary-color-one) !important;
+    background-color: var(--primary-color-one) !important;
 }
-.primarg_border_color{
-    border-color: var(--primary-color-one)!important;
+
+.primarg_border_color {
+    border-color: var(--primary-color-one) !important;
 }
+
 .footer_seven {
-    padding-top:80px;
-} 
+    padding-top: 80px;
+}
+
+.button_bg_color {
+    background: var(--primary-color-one) !important;
+    background-color: var(--primary-color-one) !important;
+}
+
+.text-light {
+    color: var(--secondary-color-eight) !important; /* alto */
+}
