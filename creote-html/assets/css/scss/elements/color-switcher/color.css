@@ -1,12 +1,20 @@
 :root {
-  --primary-color-one: #078586;
-  --menu-active-color: #078586;
-  --primary-color-two: #282f3b;
-  --heading-dark: #282f3b;
-  --link-color-dark: #282f3b;
-  --menu-color: #282f3b;
-  --menu-dropdown-color: #282f3b;
-  --primary-color-five: #222222;
+  --primary-color-one: #fb5304; /* international-orange */
+  --menu-active-color: #fb5304; /* international-orange */
+  --primary-color-two: #050505; /* black */
+  --heading-dark: #050505; /* black */
+  --link-color-dark: #050505; /* black */
+  --menu-color: #050505; /* black */
+  --menu-dropdown-color: #050505; /* black */
+  --primary-color-five: #050505; /* black */
+  --secondary-color-one: #dc3c44; /* valencia */
+  --secondary-color-two: #d43c04; /* grenadier */
+  --secondary-color-three: #c53404; /* grenadier */
+  --secondary-color-four: #7c7c7c; /* boulder */
+  --secondary-color-five: #747474; /* boulder */
+  --secondary-color-six: #a32b06; /* totem-pole */
+  --secondary-color-seven: #989595; /* dusty-gray */
+  --secondary-color-eight: #dddddd; /* alto */
 }
 
 .primarg_bg_color {
@@ -20,4 +28,9 @@
 
 .footer_seven {
   padding-top: 80px;
-}/*# sourceMappingURL=color.css.map */
+}
+
+.button_bg_color {
+  background: var(--primary-color-one) !important;
+  background-color: var(--primary-color-one) !important;
+} /* Added for button background */

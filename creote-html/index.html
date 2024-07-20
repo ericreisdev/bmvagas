@@ -35,7 +35,7 @@
    <!----navbarstyle---->
    <style>
       .navbar {
-         background-color: #2F2F2F;
+         background-color: #000000;
          position: fixed;
          top: 0;
          width: 100%;
@@ -53,7 +53,7 @@
 
       .navbar ul {
          list-style: none;
-         float: right;
+         float: left;
          margin: 0;
          padding: 0;
       }
@@ -73,9 +73,24 @@
          color: #FF4500;
       }
 
-      .navbar .social-icons {
-         display: inline;
+      .navbar .vaga-box {
+         display: inline-block;
+         background-color: #FF4500;
+         color: #FFFFFF;
+         padding: 10px 15px;
          margin-left: 20px;
+         border-radius: 5px;
+         text-decoration: none;
+         font-family: 'Roboto', sans-serif;
+      }
+
+      .navbar .vaga-box:hover {
+         background-color: #E03E00;
+      }
+
+      .navbar .social-icons {
+         float: right;
+         margin: 10px;
       }
 
       .navbar .social-icons a {
@@ -86,8 +101,6 @@
       body {
          font-family: 'Exo', sans-serif;
       }
-
-    
    </style>
    <!----navbarstyle---->
 </head>
@@ -110,16 +123,19 @@
          <div class="navbar">
             <a href="index.html" class="logo"><img src="assets/images/bm/PNG/Selo-5.png" alt="BM Vagas"></a>
             <ul>
-               <li><a href="index.html">Início</a></li>
-               <li><a href="about-us.html">Sobre nós</a></li>
-               <li><a href="service-details.html">Serviços</a></li>
-               <li><a href="contact.html">Contato</a></li>
-               <div class="social-icons">
-                  <a href="https://www.facebook.com/bmvagas"><i class="fa fa-facebook"></i></a>
-                  <a href="https://www.instagram.com/bmvagas"><i class="fa fa-instagram"></i></a>
-                  <a href="https://www.linkedin.com/company/bmvagas/"><i class="fa fa-linkedin"></i></a>
-               </div>
+               <li><a href="index.html" style="font-size: 1.2em;">Início</a></li>
+               <li><a href="about-us.html" style="font-size: 1.2em;">Sobre nós</a></li>
+               <li><a href="service-details.html" style="font-size: 1.2em;">BM Serviços</a></li>
+               <li><a href="headhunter.html" style="font-size: 1.2em;">Seja um headhunter 3.0</a></li>
+               <li><a href="franqueado.html" style="font-size: 1.2em;">Seja um franqueado</a></li>
             </ul>
+            <a href="https://jobs.recrutei.com.br/bm-vagas" class="vaga-box"style="font-size: 1.5em;">VAGAS DISPONÍVEIS</a>
+            <div class="social-icons">
+               <a href="https://www.facebook.com/bmvagas" style="font-size: 2em;"><i class="fa fa-facebook"></i></a>
+               <a href="https://www.instagram.com/bmvagas" style="font-size: 2em;"><i class="fa fa-instagram"></i></a>
+               <a href="https://www.linkedin.com/company/bmvagas/" style="font-size: 2em;"><i class="fa fa-linkedin"></i></a>
+           </div>
+           
          </div>
 <!----end page-header----->
          <!----preloader----->
@@ -130,6 +146,7 @@
          </div>
          <!----preloader end----->
          <!----header----->
+<!---slider section start--->
 
          <div id="content" class="site-content ">
 <!---slider--->
@@ -137,14 +154,14 @@
    <div class="banner_carousel owl-carousel owl_nav_block owl_dots_none theme_carousel owl-theme"
       data-options='{"loop": true, "margin": 0, "autoheight":true, "lazyload":true, "nav": true, "dots": true, "autoplay": true, "autoplayTimeout": 7000, "smartSpeed": 1800, "responsive":{ "0" :{ "items": "1" }, "768" :{ "items" : "1" } , "1000":{ "items" : "1" }}}'>
  <!-- Slide 1 -->
-<div class="slide-item" style="background: url('assets/images/bm/sliders/slider-bg-1.jpg') no-repeat center center/cover;">
+<div class="slide-item" style="background: url('assets/images/bm/sliders/slider-bg-1.png') no-repeat center center/cover;">
    <div class="slide-item-content">
       <div class="auto-container">
          <div class="content_d_flex">
             <div class="text_box_content">
-               <div class="slider_content">
+               <div class="slider_content" style="opacity: 0;">
                   <h1 class="animate_up" style="color: #fb5304;">VAGAS DISPONÍVEIS</h1>
-                  <p class="animate_up" >Encontre as melhores oportunidades de emprego.</p>
+                  <p class="animate_up">Encontre as melhores oportunidades de emprego.</p>
                   <div class="thm_btn animate_down">
                      <a href="#" target="_blank" rel="nofollow" class="theme-btn two">ENCONTRE SUA VAGA</a>
                   </div>
@@ -152,79 +169,31 @@
                      <a href="#" target="_blank" rel="nofollow" class="theme-btn two">DIVULGUE UMA VAGA</a>
                   </div>
                </div>
+               
             </div>
-            <!-- <div class="image_content">
-               <div class="slider_image animate_right">
-                   <img src="assets/images/sliders/slider-2-1.png" class="img-fluid" alt="slider image">                </div>
-            </div> -->
+            
          </div>
       </div>
    </div>
 </div>
 
 
+     
+
+      
+
       <!-- Slide 2 -->
-      <div class="slide-item" style="background: url('assets/images/bm/sliders/slider-bg-2.jpg') no-repeat center center/cover;">
-         <!-- <a href="https://br.freepik.com/fotos-gratis/pessoas-que-trabalham-em-escritorios-elegantes-e-aconchegantes_29794525.htm#fromView=search&page=1&position=2&uuid=e4d48f36-59ed-4e0c-a748-4c85243266a5">Imagem de freepik</a> -->
-         <div class="slide-item-content">
+      <div class="slide-item" style="background: url('assets/images/bm/sliders/slider-bg-2.png') no-repeat center center/cover;">
+               <div class="slide-item-content" style="opacity: 0;">
             <div class="auto-container">
                <div class="content_d_flex">
                   <div class="text_box_content">
                      <div class="slider_content">
-                        <h1 class="animate_up" style="color: #fb5304;">QUEM SOMOS</h1>
-                        <strong><p class="animate_up" >A BEST MEMBER (BM) é uma FRANCHISING especializada em RECURSOS HUMANOS.</p></strong>
-                        <p class="animate_up">Nossa missão é ajudar você a crescer profissionalmente.</p>
+                        <h1 class="animate_up" style="color: black;">.</h1>
+                        <p class="animate_up">.</p>
+                        <p class="animate_up">.</p>
                         <div class="thm_btn animate_down">
-                           <a href="#" target="_blank" rel="nofollow" class="theme-btn two">SAIBA MAIS</a>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="image_content">
-                     <div class="slider_image animate_right">
-                        <img src="assets/images/sliders/slider-2-2.png" class="img-fluid" alt="slider image">
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
-
-      <!-- Slide 3 -->
-      <div class="slide-item" style="background: url('assets/images/bm/sliders/slider-bg-3.jpg') no-repeat center center/cover;">
-         <!-- <a href="https://br.freepik.com/fotos-gratis/lideres-alegres-que-examinam-documentos-comerciais_1473209.htm#fromView=search&page=1&position=3&uuid=e4d48f36-59ed-4e0c-a748-4c85243266a5">Imagem de katemangostar no Freepik</a> -->
-         <div class="slide-item-content">
-            <div class="auto-container">
-               <div class="content_d_flex">
-                  <div class="text_box_content">
-                     <div class="slider_content">
-                        <h1 class="animate_up" style="color: #fb5304;">NOSSOS SERVIÇOS</h1>
-                        <p class="animate_up">Recrutamento & Seleção, Divulgação de Vagas.</p>
-                        
-                        <p class="animate_up">Mentorias e muito mais.</p>
-                        <div class="thm_btn animate_down">
-                           <a href="#" target="_blank" rel="nofollow" class="theme-btn two">CONHEÇA MAIS</a>
-                        </div>
-                     </div>
-                  </div>
-                  
-               </div>
-            </div>
-         </div>
-      </div>
-
-      <!-- Slide 4 -->
-      <div class="slide-item" style="background: url('assets/images/bm/sliders/slider-bg-4.jpg') no-repeat center center/cover;">
-         <!-- <a href="https://br.freepik.com/fotos-gratis/jovem-mulher-feliz-tendo-uma-entrevista-de-emprego-no-escritorio_26606820.htm#fromView=search&page=1&position=6&uuid=e4d48f36-59ed-4e0c-a748-4c85243266a5">Imagem de Drazen Zigic no Freepik</a> -->
-         <div class="slide-item-content">
-            <div class="auto-container">
-               <div class="content_d_flex">
-                  <div class="text_box_content">
-                     <div class="slider_content">
-                        <h1 class="animate_up" style="color: #fb5304;">CERTIFICAÇÃO HEADHUNTER 3.0</h1>
-                        <p class="animate_up">Capacitação para atuar em Recrutamento e Seleção.</p>
-                        <p class="animate_up">Orientados à resultados</p>
-                        <div class="thm_btn animate_down">
-                           <a href="#" target="_blank" rel="nofollow" class="theme-btn two">SAIBA MAIS</a>
+                           <a href="#" target="_blank" rel="nofollow" class="theme-btn two">.</a>
                         </div>
                      </div>
                   </div>
@@ -234,19 +203,19 @@
          </div>
       </div>
 
-      <!-- Slide 5 -->
-      <div class="slide-item" style="background: url('assets/images/bm/sliders/slider-bg-5.jpg') no-repeat center center/cover;">
-         <!-- <a href="https://br.freepik.com/fotos-gratis/equipe-trabalhando-juntos-no-projeto_23988685.htm#fromView=search&page=1&position=7&uuid=e4d48f36-59ed-4e0c-a748-4c85243266a5">Imagem de freepik</a> -->
-         <div class="slide-item-content">
+      <!-- Slide 3 -->
+      <div class="slide-item" style="background: url('assets/images/bm/sliders/slider-bg-3.png') no-repeat center center/cover;">
+         
+         <div class="slide-item-content" style="opacity: 0;">
             <div class="auto-container">
                <div class="content_d_flex">
                   <div class="text_box_content">
                      <div class="slider_content">
-                        <h1 class="animate_up" style="color: #fb5304;">SEJA UM FRANQUEADO</h1>
-                        <p class="animate_up">Cresça com a BM e tenha retorno rápido.</p>
-                        <p class="animate_up">Os melhores clientes</p>
+                        <h1 class="animate_up" style="color: white;">.</h1>
+                        <p class="animate_up">.</p>
+                        <p class="animate_up">.</p>
                         <div class="thm_btn animate_down">
-                           <a href="#" target="_blank" rel="nofollow" class="theme-btn two">SAIBA MAIS</a>
+                           <a href="#" target="_blank" rel="nofollow" class="theme-btn two">.</a>
                         </div>
                      </div>
                   </div>
@@ -258,7 +227,7 @@
       
    </div>
    <div class="auto-container pr_relative">
-      <div class="contact_box_ban" onclick="window.open('https://wa.me/5511949669300', '_blank')" style="margin-left: 75em;">
+      <div class="contact_box_ban" onclick="window.open('https://wa.me/5535910149725', '_blank')" style="margin-left: 75em;">
           <div class="icon_bx">
               <!-- Alteração: Utilização do ícone do WhatsApp do Font Awesome -->
               <i class="fab fa-whatsapp fa-4x"></i>
@@ -391,135 +360,11 @@
 
 
 
-<!---service--->
-<section class="service-section">
-   <div class="title-sec bg_dark_3 pd_top_100">
-      <div class="container">
-         <div class="row gutter_30px">
-            <div class="col-xl-6 col-lg-12 col-md-12 col-sm-12 col-xs-12">
-               <div class="description_box color_white text-md-end">
-                  <p>Otimize seu RH com os serviços da BM Vagas</p>
-               </div>
-            </div>
-            <div class="col-xl-6 col-lg-12 col-md-12 col-sm-12 col-xs-12">
-               <div class="title_all_box style_one light_color">
-                  <div class="title_sections left">
-                     <div class="before_title">Nossos Serviços</div>
-                     <h2>Domínios de Especialização</h2>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
-      <!--===============spacing==============-->
-      <div class="pd_bottom_190"></div>
-      <!--===============spacing==============-->
-   </div>
-   <div class="service-box-wrapper  pd_bottom_60 bg_light_1">
-      <div class="container">
-         <div class="row gutter_30px">
-            <div class="col-xl-4 col-lg-6 col-md-12 col-sm-12 col-xs-12">
-               <div class="service_box style_five dark_color mr_top_minus_160">
-                  <div class="service_content">
-                     <div class="image_box">
-                        <img src="assets/images/service/service-image-1.png" class="img-fluid" alt="Service Image">
-                     </div>
-                     <div class="content_inner">
-                        <span class=" icon-human-resources"></span>
-                        <div class="text_box">
-                           <h2><a href="#">Recrutamento & Seleção</a></h2>
-                           <p>Oferecemos equipes dedicadas e metodologia ágil para encontrar os candidatos ideais para à sua vaga.</p>
-                                                    
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <!--===============spacing==============-->
-               <div class="pd_bottom_30"></div>
-               <!--===============spacing==============-->
-            </div>
-            <div class="col-xl-4 col-lg-6 col-md-12 col-sm-12 col-xs-12">
-               <div class="service_box style_five dark_color mr_top_minus_160 mr_md_top_zero">
-                  <div class="service_content">
-                     <div class="image_box">
-                        <img src="assets/images/service/service-image-2.png" class="img-fluid" alt="Service Image">
-                     </div>
-                     <div class="content_inner">
-                        <span class=" icon-audit"></span>
-                        <div class="text_box">
-                           <h2><a href="#">Divulgação de Vagas e Recepção de Currículos</a></h2>
-                           <p>Atraia mais candidatos utilizando nossa equipe de divulgação.</p>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <!--===============spacing==============-->
-               <div class="pd_bottom_30"></div>
-               <br><br><br><br><br><br><br>
-               <!--===============spacing==============-->
-            </div>
-            <div class="col-xl-4 col-lg-6 col-md-12 col-sm-12 col-xs-12">
-               <div class="service_box style_five dark_color mr_top_minus_160 mr_md_top_zero">
-                  <div class="service_content">
-                     <div class="image_box">
-                        <img src="assets/images/service/service-image-4.png" class="img-fluid" alt="Service Image">
-                     </div>
-                     <div class="content_inner">
-                        <span class=" icon-heartbeat"></span>
-                        <div class="text_box">
-                           <h2><a href="#">Consultorias, Mentorias e Coaching</a></h2>
-                           <p>Alcance seus objetivos de produtividade conosco! Especializados em vendas e inteligência emocional.</p>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <!--===============spacing==============-->
-               <div class="pd_bottom_30"></div>
-               <!--===============spacing==============-->
-            </div>
-            <div class="col-xl-4 col-lg-6 col-md-12 col-sm-12 col-xs-12">
-               <div class="service_box style_five dark_color mr_top_minus_160 mr_md_top_zero">
-                  <div class="service_content">
-                     <div class="image_box">
-                        <img src="assets/images/service/service-image-3.png" class="img-fluid" alt="Service Image">
-                     </div>
-                     <div class="content_inner">
-                        <span class=" icon-heartbeat"></span>
-                        <div class="text_box">
-                           <h2><a href="#">Programa de Estágio</a></h2>
-                           <p>Contribuímos para o desenvolvimento de novos talentos para o mercado de trabalho.</p>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <!--===============spacing==============-->
-               <div class="pd_bottom_30"></div>
-               <!--===============spacing==============-->
-            </div>
-            <div class="col-xl-4 col-lg-6 col-md-12 col-sm-12 col-xs-12">
-               <div class="service_box style_five dark_color mr_top_minus_160 mr_md_top_zero">
-                  <div class="service_content">
-                     <div class="image_box">
-                        <img src="assets/images/service/service-image-6.png" class="img-fluid" alt="Service Image">
-                     </div>
-                     <div class="content_inner">
-                        <span class=" icon-heartbeat"></span>
-                        <div class="text_box">
-                           <h2><a href="#">Temporários e Terceirização</a></h2>
-                           <p>Oferecemos serviços de MOT e terceirização com a segurança de empresas pioneiras.</p>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <!--===============spacing==============-->
-               <div class="pd_bottom_30"></div>
-               <!--===============spacing==============-->
-            </div>
-         </div>
-      </div>
-   </div>
-</section>
-<!---service end--->
+<!---seção disponível--->
+<div class="image-section">
+   <img src="assets/images/bm/background/Management.jpg" alt="Otimize seu RH com os serviços BM" style="width: 100%; height: auto;">
+</div>
+<!---seção disponível final--->
 
 
 
@@ -864,120 +709,7 @@
    <!--===============spacing==============-->
    <div class="pd_bottom_80"></div>
    <!--===============spacing==============-->
-   <div class="container">
-      <div class="row">
-         <div class="col-lg-12">
-            <div class="title_all_box style_one text-center dark_color">
-               <div class="title_sections">
-                  <div class="before_title">Equipe Dedicada</div>
-                  <h2>Profissionais Dedicados</h2>
-                  <p><p>Temos a liberdade de escolher o que mais gostamos, transformando cada desafio em um prazer.</p></p>
-                  <!--===============spacing==============-->
-                  <div class="pd_bottom_15"></div>
-                  <!--===============spacing==============-->
-               </div>
-            </div>
-         </div>
-      </div>
-      <div class="row">
-         <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 mb-sm-5 mb-md-5 mb-lg-5 mb-xl-0">
-            <div class="team_box style_four">
-               <div class="team_box_outer">
-                  <div class="image_box ">
-                     <img src="assets/images/team/team-1.png" alt="team image">
-                  </div>
-                  <div class="content_box ">
-                     <div class="share_links ">
-                        <ul class="clearfix ">
-                           <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                           <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                           <li><a href="#"><i class="fa fa-skype"></i></a></li>
-                           <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                        </ul>
-                     </div>
-                     <h2><a href="#" target="_blank" rel="nofollow">Betânia Machado</a></h2>
-                     <h6 class="job_details">CEO</h6>
-                  </div>
-               </div>
-               <!--===============spacing==============-->
-               <div class="pd_bottom_25"></div>
-               <!--===============spacing==============-->
-            </div>
-         </div>
-         <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 mb-sm-5 mb-md-5 mb-lg-5 mb-xl-0">
-            <div class="team_box style_four">
-               <div class="team_box_outer">
-                  <div class="image_box ">
-                     <img src="assets/images/team/team-4.png" alt="team image">
-                  </div>
-                  <div class="content_box ">
-                     <div class="share_links ">
-                        <ul class="clearfix ">
-                           <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                           <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                           <li><a href="#"><i class="fa fa-skype"></i></a></li>
-                           <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                        </ul>
-                     </div>
-                     <h2><a href="#" target="_blank" rel="nofollow">Silvia Calazans</a></h2>
-                     <h6 class="job_details">Diretora Financeira</h6>
-                  </div>
-               </div>
-               <!--===============spacing==============-->
-               <div class="pd_bottom_25"></div>
-               <!--===============spacing==============-->
-            </div>
-         </div>
-         <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 mb-sm-5 mb-md-0 mb-lg-0 mb-xl-0">
-            <div class="team_box style_four">
-               <div class="team_box_outer">
-                  <div class="image_box ">
-                     <img src="assets/images/team/team-2.png" alt="team image">
-                  </div>
-                  <div class="content_box ">
-                     <div class="share_links ">
-                        <ul class="clearfix ">
-                           <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                           <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                           <li><a href="#"><i class="fa fa-skype"></i></a></li>
-                           <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                        </ul>
-                     </div>
-                     <h2><a href="#" target="_blank" rel="nofollow">Stephanie</a></h2>
-                     <h6 class="job_details">Líder de Equipe</h6>
-                  </div>
-               </div>
-               <!--===============spacing==============-->
-               <div class="pd_bottom_25"></div>
-               <!--===============spacing==============-->
-            </div>
-         </div>
-         <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12">
-            <div class="team_box style_four">
-               <div class="team_box_outer">
-                  <div class="image_box ">
-                     <img src="assets/images/team/team-3.png" alt="team image">
-                  </div>
-                  <div class="content_box ">
-                     <div class="share_links ">
-                        <ul class="clearfix ">
-                           <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                           <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                           <li><a href="#"><i class="fa fa-skype"></i></a></li>
-                           <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                        </ul>
-                     </div>
-                     <h2><a href="#" target="_blank" rel="nofollow">Cassius Costa</a></h2>
-                     <h6 class="job_details">Customer Success</h6>
-                  </div>
-               </div>
-               <!--===============spacing==============-->
-               <div class="pd_bottom_25"></div>
-               <!--===============spacing==============-->
-            </div>
-         </div>
-      </div>
-   </div>
+  
   <!--===============spacing==============-->
   <div class="pd_bottom_50"></div>
   <!--===============spacing==============-->
@@ -1298,13 +1030,13 @@ sobrenome">Sobrenome</label>
                      <div class="foo_cont_inner">
                         <div class="top">
                            <h6>Localização</h6>
-                           <p>Rua Isolina Gomes dos Santos 75 Loja 01, Ouro Fino, MG, 37570-000</p>
+                           <p>Ouro Fino, MG, 37570-000</p>
                         </div>
                         <div class="bottom">
                            <h6>Contato</h6>
                            <div class="con_content">
                               <h5>Telefone:</h5>
-                              <a href="tel:+5511998765432">+55 11 94966-9300</a>
+                              <a href="tel:(35) 91014-9725">(35) 91014-97250</a>
                            </div>
                            <div class="con_content">
                               <h5>Email:</h5>
