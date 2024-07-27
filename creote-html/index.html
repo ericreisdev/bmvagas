@@ -101,6 +101,46 @@
       body {
          font-family: 'Exo', sans-serif;
       }
+
+      /* BOTÕES CENTRALIZADOS DO SLIDER */
+
+      .fixed_buttons {
+   position: absolute;
+   top: 90%; /* Altere este valor para ajustar a posição vertical */
+   left: 50%;
+   transform: translate(-50%, -50%);
+   display: flex;
+   gap: 20px;
+   z-index: 1000;
+   margin-top: 20px; /* Adicione uma margem superior para empurrar os botões para baixo */
+}
+
+.fixed_buttons .theme-btn {
+   background-color: #fb5304;
+   color: black;
+   padding: 10px 20px;
+   text-decoration: none;
+   border-radius: 5px;
+   transition: background-color 0.3s ease;
+}
+
+.fixed_buttons .theme-btn:hover {
+   background-color: #333;
+}
+
+@media (max-width: 768px) {
+   .fixed_buttons {
+      top: 90%; /* Ajuste este valor conforme necessário para telas menores */
+      flex-direction: column; /* Empilhar os botões verticalmente em telas menores */
+      gap: 10px; /* Reduzir o espaço entre os botões */
+   }
+
+   .fixed_buttons .theme-btn {
+      padding: 8px 15px; /* Ajuste o padding para telas menores */
+      font-size: 14px; /* Ajuste o tamanho da fonte para telas menores */
+   }
+}
+
    </style>
    <!----navbarstyle---->
 </head>
@@ -127,7 +167,7 @@
                <li><a href="about-us.html" style="font-size: 1.2em;">Sobre nós</a></li>
                <li><a href="service-details.html" style="font-size: 1.2em;">BM Serviços</a></li>
                <li><a href="headhunter.html" style="font-size: 1.2em;">Seja um headhunter 3.0</a></li>
-               <li><a href="franqueado.html" style="font-size: 1.2em;">Seja um franqueado</a></li>
+               <li><a href="franchise.html" style="font-size: 1.2em;">Seja um franqueado</a></li>
             </ul>
             <a href="https://jobs.recrutei.com.br/bm-vagas" class="vaga-box"style="font-size: 1.5em;">VAGAS DISPONÍVEIS</a>
             <div class="social-icons">
@@ -147,44 +187,35 @@
          <!----preloader end----->
          <!----header----->
 <!---slider section start--->
+<!--===============spacing==============-->
+<div class="pd_top_40"></div>
+<!--===============spacing==============-->
 
-         < id="content" class="site-content ">
 <!---slider--->
 <section class="slider style_one slider_version_v3">
    <div class="banner_carousel owl-carousel owl_nav_block owl_dots_none theme_carousel owl-theme"
       data-options='{"loop": true, "margin": 0, "autoheight":true, "lazyload":true, "nav": true, "dots": true, "autoplay": true, "autoplayTimeout": 7000, "smartSpeed": 1800, "responsive":{ "0" :{ "items": "1" }, "768" :{ "items" : "1" } , "1000":{ "items" : "1" }}}'>
- <!-- Slide 1 -->
- <div class="slide-item" style="background: url('assets/images/bm/sliders/slider-bg-1.png') no-repeat center center/cover;">
-   <div class="slide-item-content">
-      <div class="auto-container">
-         <div class="content_d_flex">
-            <div class="text_box_content">
-               <div class="slider_content" style="opacity: 0;">
-                  <h1 class="animate_up" style="color: #fb5304;">VAGAS DISPONÍVEIS</h1>
-                  <p class="animate_up">Encontre as melhores oportunidades de emprego.</p>
-                  <div class="thm_btn animate_down">
-                     <a href="#" target="_blank" rel="nofollow" class="theme-btn two">ENCONTRE SUA VAGA</a>
-                  </div>
-                  <div class="thm_btn animate_down">
-                     <a href="#" target="_blank" rel="nofollow" class="theme-btn two">DIVULGUE UMA VAGA</a>
+
+      <!-- Slide 1 -->
+      <div class="slide-item" style="background: url('assets/images/bm/sliders/slider-bg-1.png') no-repeat center center/cover;">
+         <div class="slide-item-content">
+            <div class="auto-container">
+               <div class="content_d_flex">
+                  <div class="text_box_content">
+                     <div class="slider_content" style="opacity: 0;">
+                        <h1 class="animate_up" style="color: #fb5304;">VAGAS DISPONÍVEIS</h1>
+                        <p>hi</p>
+                        <p class="animate_up">Encontre as melhores oportunidades de emprego.</p>
+                     </div>
                   </div>
                </div>
-               
             </div>
-            
          </div>
       </div>
-   </div>
-</div>
-
-
-     
-
-      
 
       <!-- Slide 2 -->
       <div class="slide-item" style="background: url('assets/images/bm/sliders/slider-bg-2.png') no-repeat center center/cover;">
-               <div class="slide-item-content" style="opacity: 0;">
+         <div class="slide-item-content" style="opacity: 0;">
             <div class="auto-container">
                <div class="content_d_flex">
                   <div class="text_box_content">
@@ -192,12 +223,8 @@
                         <h1 class="animate_up" style="color: black;">.</h1>
                         <p class="animate_up">.</p>
                         <p class="animate_up">.</p>
-                        <div class="thm_btn animate_down">
-                           <a href="#" target="_blank" rel="nofollow" class="theme-btn two">.</a>
-                        </div>
                      </div>
                   </div>
-                 
                </div>
             </div>
          </div>
@@ -205,7 +232,6 @@
 
       <!-- Slide 3 -->
       <div class="slide-item" style="background: url('assets/images/bm/sliders/slider-bg-3.png') no-repeat center center/cover;">
-         
          <div class="slide-item-content" style="opacity: 0;">
             <div class="auto-container">
                <div class="content_d_flex">
@@ -214,32 +240,33 @@
                         <h1 class="animate_up" style="color: white;">.</h1>
                         <p class="animate_up">.</p>
                         <p class="animate_up">.</p>
-                        <div class="thm_btn animate_down">
-                           <a href="#" target="_blank" rel="nofollow" class="theme-btn two">.</a>
-                        </div>
                      </div>
                   </div>
-                  
                </div>
             </div>
          </div>
       </div>
-      
+
    </div>
    <div class="auto-container pr_relative">
       <div class="contact_box_ban" onclick="window.open('https://wa.me/5535910149725', '_blank')" style="margin-left: 75em;">
-          <div class="icon_bx">
-              <!-- Alteração: Utilização do ícone do WhatsApp do Font Awesome -->
-              <i class="fab fa-whatsapp fa-4x"></i>
-          </div>
+         <div class="icon_bx">
+            <!-- Alteração: Utilização do ícone do WhatsApp do Font Awesome -->
+            <i class="fab fa-whatsapp fa-4x"></i>
+         </div>
       </div>
-  </div>
-  
-   </section>
-   <!---slider end--->
-   
+   </div>
+
+   <!-- Botões Fixos -->
+   <div class="fixed_buttons">
+      <a href="https://jobs.recrutei.com.br/bm-vagas"  target="_blank" rel="nofollow" class="theme-btn two">VAGAS DISPONÍVEIS</a>
+      <a href="#" target="_blank" rel="nofollow" class="theme-btn two" onclick="window.open('https://wa.me/5535910149725', '_blank')">SOU EMPRESA</a>
+
+   </div>
 </section>
 <!---slider end--->
+
+
 
 
 <!----about---->
@@ -711,6 +738,125 @@
 </section>
 <!--client logo end-->
 
+<!---blog--->
+<section class="blog-post" id="blog">
+   <!--===============spacing==============-->
+   <div class="pd_top_80"></div>
+   <!--===============spacing==============-->
+   <div class="container">
+      <div class="row">
+         <div class="col-lg-12">
+            <div class="title_all_box style_one text-center dark_color">
+               <div class="title_sections">
+                  <div class="before_title">Não fique por fora das melhores</div>
+                  <h2>Newsletters</h2>
+               </div>
+            </div>
+            <!--===============spacing==============-->
+            <div class="pd_bottom_20"></div>
+            <!--===============spacing==============-->
+         </div>
+      </div>
+      
+      <!-- Seção de newsletters recomendadas -->
+      <div class="row">
+         <!-- Great Place to Work -->
+         <div class="col-lg-4 col-md-6">
+            <div class="news_box style_two grid_box _card has_images">
+               <div class="content_box">
+                  <div class="overlay"></div>
+                  <img src="assets/images/blog/blog-image-1.jpg" class="img-fluid" alt="img" />
+                  <div class="category">
+                     <a href="https://www.gptw.com.br" class="categories" target="_blank"><i class="icon-folder"></i>Great Place to Work</a>
+                  </div>
+                  <div class="content_mid">
+                     <h2 class="title"><a href="https://www.gptw.com.br" target="_blank">Conteúdos sobre Gestão de Pessoas</a></h2>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- Distrito -->
+         <div class="col-lg-4 col-md-6">
+            <div class="news_box style_two grid_box _card has_images">
+               <div class="content_box">
+                  <div class="overlay"></div>
+                  <img src="assets/images/blog/blog-image-11.png" class="img-fluid" alt="img" />
+                  <div class="category">
+                     <a href="https://distrito.me" class="categories" target="_blank"><i class="icon-folder"></i>Distrito</a>
+                  </div>
+                  <div class="content_mid">
+                     <h2 class="title"><a href="https://distrito.me" target="_blank">Dados e Relatórios de Mercado</a></h2>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- Beer or Coffee -->
+         <div class="col-lg-4 col-md-6">
+            <div class="news_box style_two grid_box _card has_images">
+               <div class="content_box">
+                  <div class="overlay"></div>
+                  <img src="assets/images/blog/blog-image-9.png" class="img-fluid" alt="img" />
+                  <div class="category">
+                     <a href="https://beerorcoffee.com" class="categories" target="_blank"><i class="icon-folder"></i>WOBA</a>
+                  </div>
+                  <div class="content_mid">
+                     <h2 class="title"><a href="https://beerorcoffee.com" target="_blank">Trabalho Remoto e Coworking</a></h2>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- ZenClub -->
+         <div class="col-lg-4 col-md-6">
+            <div class="news_box style_two grid_box _card has_images">
+               <div class="content_box">
+                  <div class="overlay"></div>
+                  <img src="assets/images/blog/blog-image-8.png" class="img-fluid" alt="img" />
+                  <div class="category">
+                     <a href="https://zenklub.com" class="categories" target="_blank"><i class="icon-folder"></i>ZenClub</a>
+                  </div>
+                  <div class="content_mid">
+                     <h2 class="title"><a href="https://zenklub.com" target="_blank">Saúde Mental e Bem-Estar</a></h2>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- Endeavor Brasil -->
+         <div class="col-lg-4 col-md-6">
+            <div class="news_box style_two grid_box _card has_images">
+               <div class="content_box">
+                  <div class="overlay"></div>
+                  <img src="assets/images/blog/blog-image-7.jpg" class="img-fluid" alt="img" />
+                  <div class="category">
+                     <a href="https://endeavor.org.br" class="categories" target="_blank"><i class="icon-folder"></i>Endeavor Brasil</a>
+                  </div>
+                  <div class="content_mid">
+                     <h2 class="title"><a href="https://endeavor.org.br" target="_blank">Empreendedorismo e Inovação</a></h2>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- RHOPEN -->
+         <div class="col-lg-4 col-md-6">
+            <div class="news_box style_two grid_box _card has_images">
+               <div class="content_box">
+                  <div class="overlay"></div>
+                  <img src="assets/images/blog/blog-image-6.jpg" class="img-fluid" alt="img" />
+                  <div class="category">
+                     <a href="https://rhopen.com.br" class="categories" target="_blank"><i class="icon-folder"></i>RHOPEN</a>
+                  </div>
+                  <div class="content_mid">
+                     <h2 class="title"><a href="https://rhopen.com.br" target="_blank">Gestão de Pessoas e Negócios</a></h2>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!--===============spacing==============-->
+   <div class="pd_bottom_70"></div>
+   <!--===============spacing==============-->
+</section>
+<!---blog-end--->
 
 
 <!---contact end--->
@@ -775,7 +921,7 @@
                               <h6>Contato</h6>
                               <div class="con_content">
                                  <h5>Telefone:</h5>
-                                 <a href="tel:(35) 91014-9725">(35) 91014-97250</a>
+                                 <a href="tel:(35) 91014-9725">(35) 91014-9725</a>
                               </div>
                               <div class="con_content">
                                  <h5>Email:</h5>
@@ -827,7 +973,7 @@
                         <div class="shortcodes">
                            <form class="mc4wp-form" method="post" data-name="Subscibe">
                               <div class="mc4wp-form-fields">
-                                 <input type="email" name="EMAIL" placeholder="Seu endereço de email" required="">
+                                 <input type="email" name="EMAIL" placeholder="Insira seu e-mail" required="">
                                  <input type="submit" value="Inscreva-se">
                               </div>
                            </form>
