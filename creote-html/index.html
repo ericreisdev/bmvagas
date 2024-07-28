@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="pt-BR">
 
 <head>
    <meta charset="utf-8">
@@ -32,117 +32,203 @@
    <link rel='stylesheet' href='assets/css/woocommerce-layout.css' type='text/css' media='all' />
    <link rel='stylesheet' href='assets/css/woocommerce.css' type='text/css' media='all' />
    <!----woocommerce---->
-   <!----navbarstyle---->
-   <style>
-      .navbar {
-         background-color: #000000;
-         position: fixed;
-         top: 0;
-         width: 100%;
-         z-index: 1000;
-      }
+<!----page style---->
+<style>
+   .navbar {
+      background-color: #000000;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+   }
 
-      .navbar .logo {
-         float: left;
-         margin: 10px;
-         width: 15em;
-         /* ajuste o tamanho conforme necessário */
-         height: auto;
-         /* para manter a proporção */
-      }
+   .navbar .logo {
+      float: left;
+      margin: 10px;
+      width: 15em;
+      /* ajuste o tamanho conforme necessário */
+      height: auto;
+      /* para manter a proporção */
+   }
 
-      .navbar ul {
-         list-style: none;
-         float: left;
-         margin: 0;
-         padding: 0;
-      }
+   .navbar ul {
+      list-style: none;
+      float: left;
+      margin: 0;
+      padding: 0;
+   }
 
-      .navbar ul li {
-         display: inline;
-         margin-right: 20px;
-      }
+   .navbar ul li {
+      display: inline;
+      margin-right: 20px;
+   }
 
-      .navbar ul li a {
-         color: #FFFFFF;
-         font-family: 'Roboto', sans-serif;
-         text-decoration: none;
-      }
+   .navbar ul li a {
+      color: #FFFFFF;
+      font-family: 'Roboto', sans-serif;
+      text-decoration: none;
+   }
 
-      .navbar ul li a:hover {
-         color: #FF4500;
-      }
+   .navbar ul li a:hover {
+      color: #FF4500;
+   }
 
-      .navbar .vaga-box {
-         display: inline-block;
-         background-color: #FF4500;
-         color: #FFFFFF;
-         padding: 10px 15px;
-         margin-left: 20px;
-         border-radius: 5px;
-         text-decoration: none;
-         font-family: 'Roboto', sans-serif;
-      }
+   .navbar .vaga-box {
+      display: inline-block;
+      background-color: #FF4500;
+      color: #FFFFFF;
+      padding: 10px 15px;
+      margin-left: 20px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-family: 'Roboto', sans-serif;
+   }
 
-      .navbar .vaga-box:hover {
-         background-color: #E03E00;
-      }
+   .navbar .vaga-box:hover {
+      background-color: #E03E00;
+   }
 
-      .navbar .social-icons {
-         float: right;
-         margin: 10px;
-      }
+   .navbar .social-icons {
+      float: right;
+      margin: 10px;
+   }
 
-      .navbar .social-icons a {
-         color: #FFFFFF;
-         margin-right: 10px;
-      }
+   .navbar .social-icons a {
+      color: #FFFFFF;
+      margin-right: 10px;
+   }
 
-      body {
-         font-family: 'Exo', sans-serif;
-      }
+   body {
+      font-family: 'Exo', sans-serif;
+      margin-top: 60px; /* Espaço para o header fixo */
+   }
 
-      /* BOTÕES CENTRALIZADOS DO SLIDER */
-
-      .fixed_buttons {
-   position: absolute;
-   top: 90%; /* Altere este valor para ajustar a posição vertical */
-   left: 50%;
-   transform: translate(-50%, -50%);
-   display: flex;
-   gap: 20px;
-   z-index: 1000;
-   margin-top: 20px; /* Adicione uma margem superior para empurrar os botões para baixo */
-}
-
-.fixed_buttons .theme-btn {
-   background-color: #fb5304;
-   color: black;
-   padding: 10px 20px;
-   text-decoration: none;
-   border-radius: 5px;
-   transition: background-color 0.3s ease;
-}
-
-.fixed_buttons .theme-btn:hover {
-   background-color: #333;
-}
-
-@media (max-width: 768px) {
+   /* BOTÕES CENTRALIZADOS DO SLIDER */
    .fixed_buttons {
-      top: 90%; /* Ajuste este valor conforme necessário para telas menores */
-      flex-direction: column; /* Empilhar os botões verticalmente em telas menores */
-      gap: 10px; /* Reduzir o espaço entre os botões */
+      position: absolute;
+      top: calc(90% + 60px); /* Adicionando espaço para o header fixo */
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: flex;
+      gap: 20px;
+      z-index: 1000;
+      margin-top: 20px; /* Adicione uma margem superior para empurrar os botões para baixo */
    }
 
    .fixed_buttons .theme-btn {
-      padding: 8px 15px; /* Ajuste o padding para telas menores */
-      font-size: 14px; /* Ajuste o tamanho da fonte para telas menores */
+      background-color: #fb5304;
+      color: black;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
    }
-}
 
-   </style>
-   <!----navbarstyle---->
+   .fixed_buttons .theme-btn:hover {
+      background-color: #333;
+   }
+
+   @media (max-width: 768px) {
+      .fixed_buttons {
+         top: calc(90% + 60px); /* Ajuste este valor conforme necessário para telas menores */
+         flex-direction: column; /* Empilhar os botões verticalmente em telas menores */
+         gap: 10px; /* Reduzir o espaço entre os botões */
+      }
+
+      .fixed_buttons .theme-btn {
+         padding: 8px 15px; /* Ajuste o padding para telas menores */
+         font-size: 14px; /* Ajuste o tamanho da fonte para telas menores */
+      }
+   }
+
+   /* Adicionando o botão na parte inferior direita da seção */
+   .about-section .about-button {
+      position: absolute;
+      bottom: 10px;
+      right: 10px;
+      background-color: #fb5304;
+      color: black;
+      padding: 8px 15px;
+      text-decoration: none;
+      border-radius: 5px;
+      font-family: 'Roboto', sans-serif;
+      transition: background-color 0.3s ease;
+   }
+
+   .about-section .about-button:hover {
+      background-color: #333;
+      color: white;
+   }
+
+   .client-experience-button {
+      margin-left: 20px;
+      background-color: #fb5304;
+      color: white;
+      padding: 8px 15px;
+      text-decoration: none;
+      border-radius: 5px;
+      font-family: 'Roboto', sans-serif;
+      transition: background-color 0.3s ease;
+      float: right;
+      font-size: 14px;
+   }
+
+   .client-experience-button:hover {
+      background-color: #333;
+   }
+
+   /* Estilos do slider */
+   .slider .slide-item-content {
+      padding: 60px 0;
+      text-align: center;
+   }
+
+   .slider h1 {
+      font-size: 48px;
+      line-height: 1.2;
+   }
+
+   .slider p {
+      font-size: 20px;
+   }
+
+   @media (max-width: 768px) {
+      .slider .slide-item-content {
+         padding: 40px 0;
+      }
+
+      .slider h1 {
+         font-size: 32px;
+      }
+
+      .slider p {
+         font-size: 16px;
+      }
+
+      .auto-container .contact_box_ban {
+         margin-left: 0;
+         text-align: center;
+         padding: 10px 0;
+      }
+
+      .slider .banner_carousel {
+         display: none;
+      }
+
+      .slider .static-slide {
+         display: block;
+      }
+   }
+
+   .slider .static-slide {
+      display: none;
+      background: url('assets/images/bm/cel/celstatic.jpg') no-repeat center center/cover;
+      height: 100vh;
+      width: 100%;
+   }
+</style>
+<!----page style end---->
+
 </head>
 
 <body class="home theme-creote page-home-default-one">
@@ -186,11 +272,6 @@
          </div>
          <!----preloader end----->
          <!----header----->
-<!---slider section start--->
-<!--===============spacing==============-->
-<div class="pd_top_40"></div>
-<!--===============spacing==============-->
-
 <!---slider--->
 <section class="slider style_one slider_version_v3">
    <div class="banner_carousel owl-carousel owl_nav_block owl_dots_none theme_carousel owl-theme"
@@ -248,6 +329,7 @@
       </div>
 
    </div>
+   <div class="static-slide"></div>
    <div class="auto-container pr_relative">
       <div class="contact_box_ban" onclick="window.open('https://wa.me/5535910149725', '_blank')" style="margin-left: 75em;">
          <div class="icon_bx">
@@ -261,11 +343,9 @@
    <div class="fixed_buttons">
       <a href="https://jobs.recrutei.com.br/bm-vagas"  target="_blank" rel="nofollow" class="theme-btn two">VAGAS DISPONÍVEIS</a>
       <a href="#" target="_blank" rel="nofollow" class="theme-btn two" onclick="window.open('https://wa.me/5535910149725', '_blank')">SOU EMPRESA</a>
-
    </div>
 </section>
 <!---slider end--->
-
 
 
 
@@ -371,6 +451,8 @@
                         </div>
                      </div>
                   </div>
+                  <br>
+                  <a href="about-us.html" class="about-button">Saiba Mais</a>
                </div>
             </div>
          </div>
@@ -379,6 +461,7 @@
    <!--===============spacing==============-->
    <div class="pd_bottom_80"></div>
    <!--===============spacing==============-->
+   
 </section>
 <!----about end---->
 
@@ -386,12 +469,19 @@
 
 
 
-
-<!---seção disponível--->
-<div class="image-section">
+<!---service-details--->
+<div class="image-section" style="position: relative;">
    <img src="assets/images/bm/background/Management.jpg" alt="Otimize seu RH com os serviços BM" style="width: 100%; height: auto;">
+   <a href="service-details.html" class="service-button" style="position: absolute; bottom: 10px; left: 10px; background-color: #fb5304; color: black; padding: 10px 20px; text-decoration: none; border-radius: 5px; font-family: 'Roboto', sans-serif; transition: background-color 0.3s ease;">Saiba Mais</a>
 </div>
-<!---seção disponível final--->
+<!---service-details--->
+
+<style>
+   .service-button:hover {
+      background-color: #333;
+      color: white;
+   }
+</style>
 
 
 
@@ -411,7 +501,7 @@
          </div>
          <div class="col-xl-4 col-lg-6 col-md-12 col-sm-12 col-xs-12">
             <div class="theme_btn_all color_one text-md-end">
-               <a href="#" target="_blank" rel="nofollow" class="theme-btn one">Quero Saber Mais!</a>
+               <a href="headhunter.html" target="_blank" rel="nofollow" class="theme-btn one">Quero ser um headhunter!</a>
                <!--===============spacing==============-->
                <div class="pd_top_20"></div>
                <!--===============spacing==============-->
@@ -561,7 +651,9 @@
            <div class="title_all_box style_one text-center dark_color">
               <div class="title_sections">
                  <div class="before_title">Nossos Clientes</div>
-                 <h2>Experiência dos Clientes</h2>
+                 <h2>Experiência dos Clientes
+                  <a href="franchise.html" class="client-experience-button" style="margin-left: 20px; background-color: #fb5304; color: white; padding: 5px 10px; text-decoration: none; border-radius: 2.5px; font-family: 'Roboto', sans-serif; transition: background-color 0.3s ease; float: right;">Quero ser um franqueado!</a>
+               </h2>
               </div>
               <!--===============spacing==============-->
               <div class="pd_bottom_15"></div>
@@ -618,19 +710,19 @@
                           </div>
                           <div class="authour_details">
                              <div class="b_image">
-                                <img src="assets/images/CLIENT-logo-1.png" alt="image">
+                                <img src="assets/images/CLIENT-logo-3.png" alt="image">
                              </div>
                              <div class="comment">
                                 "A BM Vagas é uma excelente opção de negócio para empreendedores que buscam uma renda de R$10mil a R$20mil com retorno rápido e modelo de gestão preparado para ser lucrativo."
                              </div>
                              <div class="details clearfix">
                                 <div class="c_image">
-                                   <img src="assets/images/testi-2.png" alt="image">
+                                   <img src="assets/images/testi-3.png" alt="image">
                                 </div>
                                 <div class="c_content">
                                    <div class="content_in">
-                                      <h2>Roseli Escudeiro</h2>
-                                      <span>Gestora da Via Mais Parking</span>
+                                      <h2>Rafaela Souza</h2>
+                                      <span>Gestora Comercial</span>
                                    </div>
                                 </div>
                              </div>
